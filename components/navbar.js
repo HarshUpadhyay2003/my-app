@@ -27,22 +27,22 @@ export default function Navbar() {
     <nav
       className={
         color
-          ? "nav-bg text-2xl caudex-bold-italic sticky top-0 z-10 p-5"
-          : "nav-container text-2xl caudex-bold-italic sticky top-0 p-5"
+          ? "nav-bg text-xl md:text-2xl caudex-bold-italic sticky top-0 z-10 p-4 md:p-5"
+          : "nav-container text-xl md:text-2xl caudex-bold-italic sticky top-0 p-4 md:p-5"
       }
     >
       <Link to="" smooth={true} duration={500}>
         <div className="flex flex-col cursor-pointer">
-          <div className='flex className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-11 0 duration-200"'>
-            <Image src={logo} width={100} alt="logo" />
-            <div className="flex flex-col ml-2 justify-center">
+          <div className='flex hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200'>
+            <Image src={logo} width={80} height={80} alt="logo" className="w-20 md:w-24" />
+            <div className="flex flex-col ml-2 justify-center text-sm md:text-base">
               <span>AstraNex Services Pvt Ltd.</span>
               <span>GSTIN No: 09ABACA3170B1Z7</span>
             </div>
           </div>
         </div>
       </Link>
-      <div className="list-none flex space-x-6">
+      <div className="list-none flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
         <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
           <Link to="home" smooth={true} duration={500}>
             <span>Home</span>

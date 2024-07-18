@@ -6,12 +6,12 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 export default function Footer() {
   return (
     <>
-      <nav className="flex justify-between items-center caudex-bold-italic w-full bg-gray-300 p-10 mt-10  ">
+      <nav className="flex flex-col md:flex-row justify-between items-center caudex-bold-italic w-full bg-gray-300 p-5 md:p-10 mt-10">
         <Link href="/">
-          <div className="flex flex-col">
-            <span className="text-2xl">AstraNex Services Pvt Ltd.</span>
-            <span>
-              <CopyrightIcon />
+          <div className="flex flex-col text-center md:text-left mb-4 md:mb-0">
+            <span className="text-xl md:text-2xl">AstraNex Services Pvt Ltd.</span>
+            <span className="flex items-center justify-center md:justify-start">
+              <CopyrightIcon className="mr-1" />
               AstraNex Services Pvt Ltd.
             </span>
           </div>

@@ -14,12 +14,12 @@ import img from "@/public/image1.jpg";
 export default function MainPage() {
   return (
     <>
-      <div className="flex caudex-bold justify-around items-center text-3xl w-full h-screen ">
-        <div>
-          <h1>AstraNex Services</h1>
-          <p>Empowering Your Data with Excellence</p>
+      <div className="flex flex-col md:flex-row justify-around items-center text-3xl w-full h-screen p-4">
+        <div className="mb-8 md:mb-0 text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl">AstraNex Services</h1>
+          <p className="text-lg md:text-xl">Empowering Your Data with Excellence</p>
         </div>
-        <div>
+        <div className="w-full md:w-[500px]">
           <Carousel
             plugins={[
               Autoplay({
@@ -28,18 +28,18 @@ export default function MainPage() {
                 stopOnMouseEnter: true,
               }),
             ]}
-            className="w-[500px] "
+            className="w-full"
             opts={{ loop: true }}
           >
-            <CarouselContent className="">
+            <CarouselContent>
               <CarouselItem>
-                <Image src={img} alt="image" loading="lazy"/>
+                <Image src={img} alt="image" loading="lazy" className="w-full h-auto" />
               </CarouselItem>
               <CarouselItem>
-                <Image src={img} alt="image" loading="lazy"/>
+                <Image src={img} alt="image" loading="lazy" className="w-full h-auto" />
               </CarouselItem>
               <CarouselItem>
-                <Image src={img} alt="image" loading="lazy"/>
+                <Image src={img} alt="image" loading="lazy" className="w-full h-auto" />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
