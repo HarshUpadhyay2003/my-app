@@ -14,7 +14,7 @@ export default function Contact() {
           <br />
           <h1 className="text-xl md:text-3xl">Address</h1>
           <p className="text-lg md:text-2xl">
-            Venue: B-308, Logix Technova Sector-132 Noida
+             B-308, Logix Technova Sector-132 Noida
           </p>
         </div>
         <div className="flex-1 p-5 md:p-0 text-lg md:text-3xl">

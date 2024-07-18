@@ -37,7 +37,6 @@ export default function Navbar() {
             <Image src={logo} width={80} height={80} alt="logo" className="w-20 md:w-24" />
             <div className="flex flex-col ml-2 justify-center text-sm md:text-base">
               <span>AstraNex Services Pvt Ltd.</span>
-              <span>GSTIN No: 09ABACA3170B1Z7</span>
             </div>
           </div>
         </div>

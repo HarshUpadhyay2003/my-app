@@ -1,53 +1,20 @@
-"use client";
 import Catalouge from "@/components/catalouge";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function Products() {
   return (
     <>
-      <div className="w-full h-screen ">
-        <div className="flex caudex-bold justify-center text-3xl">
+      <div className="w-full h-screen p-4 md:p-10">
+        <div className="flex caudex-bold justify-center text-xl md:text-3xl">
           <h1>Focus on What Matters - Leave the Data Entry to Us!</h1>
         </div>
-        <div className="flex justify-center mt-24">
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 2000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: true,
-              }),
-            ]}
-            className=" "
-            opts={{ loop: true }}
-          >
-            <CarouselContent className="w-[1300px] ">
-              <CarouselItem className="basis-1/3">
-                <Catalouge />
-              </CarouselItem>
-              <CarouselItem className="basis-1/3 ">
-                <Catalouge />
-              </CarouselItem>
-              <CarouselItem className="basis-1/3 ">
-                <Catalouge />
-              </CarouselItem>
-              <CarouselItem className="basis-1/3 ">
-                <Catalouge />
-              </CarouselItem>
-              <CarouselItem className="basis-1/3 ">
-                <Catalouge />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+        <div className="product caudex-regular m-4 md:m-10 text-lg md:text-2xl">
+          <p>
+            As a forward-thinking company, AstraNex is poised to expand its
+            footprint in the industry, continually adapting to the evolving
+            needs of businesses and embracing innovative solutions to drive
+            success.
+          </p>
+          <Catalouge />
         </div>
       </div>
     </>
