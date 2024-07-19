@@ -12,6 +12,12 @@ export default function Products() {
             As a forward-thinking company, AstraNex is poised to expand its
             footprint in the industry, continually adapting to the evolving
             needs of businesses and embracing innovative solutions to drive
+            success. 
+            <br/><br/>
+            Astranex Services, with a team boasting over 11 years of
+            experience, specializes in accurate and efficient data entry and
+            management services. We ensure high-quality data handling, from
+            entry to processing and conversion, to support your business
             success.
           </p>
           <Catalouge />
