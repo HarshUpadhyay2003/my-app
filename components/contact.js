@@ -25,16 +25,19 @@ export default function Contact() {
               className="w-full md:w-auto mr-0 md:mr-10 focus:bg-black focus:text-white mb-3 md:mb-0"
               name="entry.196314300"
               placeholder="Enter Your Name"
+              required
             />
             <input
               className="w-full md:w-auto focus:bg-black focus:text-white mb-3 md:mb-0"
               placeholder="Enter Your Email"
               name="entry.1891215123"
+              required
             />
             <textarea
               className="w-full md:min-w-[780px] min-h-24 mt-5 focus:bg-black focus:text-white"
               placeholder="Enter Your Message"
               name="entry.598856177"
+              required
             />
             <br />
             <div className="text-center">

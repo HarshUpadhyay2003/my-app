@@ -9,7 +9,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 90) {
         setColor(true);
       } else {
         setColor(false);
@@ -43,7 +43,7 @@ export default function Navbar() {
       </Link>
       <div className="list-none flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
         <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={300}>
             <span>Home</span>
           </Link>
         </li>
