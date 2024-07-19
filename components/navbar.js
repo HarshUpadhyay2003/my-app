@@ -35,8 +35,8 @@ export default function Navbar() {
         <div className="flex flex-col cursor-pointer">
           <div className='flex hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200'>
             <Image src={logo} width={80} height={80} alt="logo" className="w-20 md:w-24" />
-            <div className="flex flex-col ml-2 justify-center text-sm md:text-base">
-              <span>AstraNex Services Pvt Ltd.</span>
+            <div className="flex flex-col ml-2 justify-center md:text-base">
+              <span className="text-2xl">AstraNex Services Pvt Ltd.</span>
             </div>
           </div>
         </div>
