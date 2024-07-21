@@ -4,7 +4,7 @@ export default function Products() {
   return (
     <>
       <div className="w-full h-screen p-4 md:p-10">
-        <div className="flex caudex-bold justify-center text-xl md:text-3xl">
+        <div className="flex caudex-bold justify-center text-xl mb-20 md:text-3xl">
           <h1>Focus on What Matters - Leave the Data Entry to Us!</h1>
         </div>
         <div className="product caudex-regular m-4 md:m-10 text-lg md:text-2xl">
