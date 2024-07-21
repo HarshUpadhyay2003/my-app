@@ -13,8 +13,7 @@ export default function Products() {
             footprint in the industry, continually adapting to the evolving
             needs of businesses and embracing innovative solutions to drive
             success.
-            <br />
-            <br />
+            <br/>
             With over 11 years of experience, Astranex Services specializes in
             accurate and efficient data entry and management to support your
             business success.
