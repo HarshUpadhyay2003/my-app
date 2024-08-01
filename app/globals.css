@@ -115,7 +115,7 @@
   display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(30, 41, 59, 0.4);
-    backdrop-filter: blur(10px);
+    background-color: #4f46e566;
+    backdrop-filter: blur(7px);
     
 }

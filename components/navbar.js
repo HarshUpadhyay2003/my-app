@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 50) {
         setColor(true);
       } else {
         setColor(false);
@@ -40,8 +40,14 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <Link to="" smooth={true} duration={500}>
           <div className="flex flex-col cursor-pointer">
-            <div className='flex hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200'>
-              <Image src={logo} width={80} height={80} alt="logo" className="w-20 md:w-24" />
+            <div className="flex hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+              <Image
+                src={logo}
+                width={80}
+                height={80}
+                alt="logo"
+                className="w-20 md:w-24"
+              />
               <div className="flex flex-col ml-2 justify-center md:text-base">
                 <span className="text-2xl">AstraNex Services Pvt Ltd.</span>
               </div>
@@ -55,7 +61,9 @@ export default function Navbar() {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className={`${isOpen ? 'hidden' : 'block'} h-6 w-6 transition-transform transform hover:scale-125`}
+              className={`${
+                isOpen ? "hidden" : "block"
+              } h-6 w-6 transition-transform transform hover:scale-125`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -70,7 +78,9 @@ export default function Navbar() {
               />
             </svg>
             <svg
-              className={`${isOpen ? 'block' : 'hidden'} h-6 w-6 transition-transform transform hover:scale-125`}
+              className={`${
+                isOpen ? "block" : "hidden"
+              } h-6 w-6 transition-transform transform hover:scale-125`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -87,20 +97,42 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <div className={`${isOpen ? 'block' : 'hidden'} md:flex md:items-center md:space-x-6 mt-4 md:mt-0`}>
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } md:flex md:items-center md:space-x-6 mt-4 md:mt-0`}
+      >
         <ul className="list-none flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
-          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
-            <Link to="home" smooth={true} duration={300} onClick={() => setIsOpen(false)}>
+          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:text-indigo-600 hover:scale-110 duration-200">
+            <Link
+              to="home"
+              smooth={true}
+              offset={-100}
+              duration={300}
+              onClick={() => setIsOpen(false)}
+            >
               <span>Home</span>
             </Link>
           </li>
-          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
-            <Link to="products" smooth={true} offset={-200} duration={500} onClick={() => setIsOpen(false)}>
-              <span>Products</span>
+          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:text-indigo-600 hover:scale-110 duration-200">
+            <Link
+              to="services"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
+              <span>Services</span>
             </Link>
           </li>
-          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
-            <Link to="contact" smooth={true} offset={-150} duration={500} onClick={() => setIsOpen(false)}>
+          <li className="hover:underline cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:text-indigo-600 hover:scale-110 duration-200">
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-150}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
               <span>Contact</span>
             </Link>
           </li>

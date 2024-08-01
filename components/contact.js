@@ -9,12 +9,12 @@ export default function Contact() {
         <div className="p-5 md:pl-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex-1">
           <h1 className="text-xl md:text-3xl">AstraNex Services Pvt Ltd.</h1>
           <br />
-          <h1 className="text-xl md:text-3xl">Contact Person - Uddeshya Gupta</h1>
+          <h1 className="text-xl md:text-3xl">Contact:- </h1>
           <p className="text-lg md:text-2xl">contact@astranexservices.com</p>
           <br />
-          <h1 className="text-xl md:text-3xl">Address</h1>
+          <h1 className="text-xl md:text-3xl">Address:- </h1>
           <p className="text-lg md:text-2xl">
-             B-308, Logix Technova Sector-132 Noida
+            B-308, Logix Technova Sector-132 Noida
           </p>
         </div>
         <div className="flex-1 p-5 md:p-0 text-lg md:text-3xl">
@@ -22,19 +22,19 @@ export default function Contact() {
             <h1 className="text-center text-xl md:text-3xl">Talk To Us</h1>
             <br />
             <input
-              className="w-full md:w-auto mr-0 md:mr-10 focus:bg-black focus:text-white mb-3 md:mb-0"
+              className="w-full md:w-auto mr-0 md:mr-10  mb-3 md:mb-0"
               name="entry.196314300"
               placeholder="Enter Name"
               required
             />
             <input
-              className="w-full md:w-auto focus:bg-black focus:text-white mb-3 md:mb-0"
+              className="w-full md:w-auto  mb-3 md:mb-0"
               placeholder="Enter Email"
               name="entry.1891215123"
               required
             />
             <textarea
-              className="w-full md:min-w-[780px] min-h-24 mt-5 focus:bg-black focus:text-white"
+              className="md:min-w-[780px] min-h-24 mt-5 "
               placeholder="Enter Message"
               name="entry.598856177"
               required

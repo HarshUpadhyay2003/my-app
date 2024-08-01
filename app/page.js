@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import MainPage from "@/components/main-header";
-import Products from "@/components/product";
+import Services from "@/components/services";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -11,8 +11,8 @@ export default function Home() {
       <div id="home">
         <MainPage />
       </div>
-      <div id="products">
-        <Products />
+      <div id="services">
+        <Services />
       </div>
       <div id="contact">
         <Contact />
